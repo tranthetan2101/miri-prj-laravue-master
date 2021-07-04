@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <filter id="Ellipse_111" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#15489b" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pay-active" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_111)">
+      <circle id="Ellipse_111-2" data-name="Ellipse 111" cx="25" cy="25" r="25" transform="translate(9 6)" fill="#3580ff"/>
+    </g>
+    <path id="Icon_card" data-name="Icon/ card" d="M-4357.187-4397.245a2.661,2.661,0,0,1-2.81-2.808q-.007-5.566,0-11.135a2.662,2.662,0,0,1,2.806-2.811h11.945q3.226,0,6.451,0a2.674,2.674,0,0,1,2.791,2.788q.008,5.588,0,11.174a2.661,2.661,0,0,1-2.825,2.792h-18.358Zm-1.574-10.3c-.005.076-.012.146-.012.217v1.625q-.005,2.817,0,5.633a1.434,1.434,0,0,0,1.612,1.588q9.155,0,18.315,0a2.158,2.158,0,0,0,.568-.052,1.43,1.43,0,0,0,1.045-1.495q.01-2.971,0-5.941l0-1.43a1.043,1.043,0,0,0-.017-.16l0-.015h-21.509Zm1.361-5.212a1.327,1.327,0,0,0-1.29,1,5.385,5.385,0,0,0-.089,1c0,.122-.007.246-.014.369h21.545q0-.148.005-.292a7.431,7.431,0,0,0-.011-.791,1.309,1.309,0,0,0-.97-1.2,2.364,2.364,0,0,0-.709-.076q-7.674-.005-15.344,0h-2.817C-4357.195-4412.763-4357.3-4412.762-4357.4-4412.757Zm9.97,13.113v-1.914h1.916v1.914Zm-8.673,0v-1.914h7.235v1.914Z" transform="translate(4373 4431)" fill="#3580ff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Subtraction_12" data-name="Subtraction 12" d="M-7468.44-4397.244H-7486.8a2.663,2.663,0,0,1-2.81-2.811c0-2.783,0-5.237,0-7.5h24c0,2.341,0,4.8,0,7.519A2.664,2.664,0,0,1-7468.44-4397.244Zm-8.6-4.314v1.914h1.916v-1.914Zm-8.675,0v1.914h7.237v-1.914Zm20.1-8.837h-23.995c0-.176,0-.353,0-.529v-.264A2.664,2.664,0,0,1-7486.8-4414h18.4a2.676,2.676,0,0,1,2.792,2.79v.815Z" transform="translate(7502.61 4431)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="526" height="768" viewBox="0 0 526 768">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.981" y1="0.958" x2="0.284" y2="0.289" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe1d3"/>
+      <stop offset="1" stop-color="#fec" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="bg-message-mobile" transform="translate(76 -163)">
+    <circle id="Ellipse_158" data-name="Ellipse 158" cx="145" cy="145" r="145" transform="translate(160 641)" fill="url(#linear-gradient)"/>
+    <path id="Path_8868" data-name="Path 8868" d="M145,0A145,145,0,1,1,0,145,145,145,0,0,1,145,0Z" transform="translate(-76 635)" fill="none"/>
+    <circle id="Ellipse_120" data-name="Ellipse 120" cx="28" cy="28" r="28" transform="translate(177 163)" fill="#dbeddd" opacity="0.7"/>
+  </g>
+</svg>

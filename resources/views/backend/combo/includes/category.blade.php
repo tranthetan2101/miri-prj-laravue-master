@@ -1,0 +1,2 @@
+{{$combo->category->name}}
+

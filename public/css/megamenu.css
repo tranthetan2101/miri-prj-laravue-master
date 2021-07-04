@@ -1,0 +1,449 @@
+/*
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Body - not related to megamenu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+  box-sizing: border-box;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu-container {
+  float: left;
+}
+.menu-mobile {
+  display: none;
+  padding: 20px;
+}
+.menu-mobile:after {
+  content: "";
+  position: absolute;
+  background: url(../images/hamburger.svg) no-repeat top right;
+  width: 20px;
+  height: 20px;
+}
+.menu-mobile.close:after {
+  content: "";
+  position: absolute;
+  background: url(../images/close.svg) no-repeat top right;
+  width: 20px;
+  height: 20px;
+}
+.menu-dropdown-icon:before {
+  content: "";
+  display: none;
+  cursor: pointer;
+  float: right;
+  background: url(../images/plus.svg) no-repeat top right;
+  width: 8px;
+  height: 8px;
+}
+.menu > ul {
+  margin-left: 80px;
+  list-style: none;
+  padding-top: 30px;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  box-sizing: border-box;
+}
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left;
+  padding: 0 15px;
+}
+.menu > ul > li a {
+  text-decoration: none;
+  display: block;
+  color: #000000;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: 400;
+}
+.menu > ul > li:hover a {
+  color: #0055A3;
+  border-bottom: 3px solid #0055A3;
+  height: 25px;
+}
+.menu > ul > li a.active {
+  color: #0055A3;
+  border-bottom: 3px solid #0055A3;
+  height: 25px;
+}
+.menu > ul > li > .sub-menu {
+  display: none;
+  width: 100%;
+  padding: 80px 0 0;
+  position: absolute;
+  z-index: 99;
+  top: 115px;
+  left: 0;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: white;
+  background-image: url(../images/bubble-sub-menu.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  box-shadow: 0 50px 50px #ddd;
+}
+.sub-menu .sub-menu-inner, .normal-sub .sub-menu-inner{
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: table;
+}
+#about-sub-menu {
+  width: revert !important;
+}
+.sub-menu .list-sub-cats{
+  width: 75%;
+  float: left;
+}
+.sub-menu .sub-banner{
+  float: right;
+}
+.menu .sub-menu li{
+  margin-bottom: 10px;
+}
+.menu .sub-menu li a{
+  font-size: 14px;
+  line-height: 1.5;
+  color: #0055A3;
+  text-transform: initial;
+  margin-bottom: 15px;
+}
+.menu > ul > li:hover > ul li a{
+  border-bottom: 0;
+  padding: 0;
+}
+.menu .sub-menu .sub-menu-level-2 li{
+  margin-bottom: 0;
+
+}
+.menu .sub-menu .sub-menu-level-2 li a{
+  font-size: 12px;
+  color: #000;
+  text-transform: capitalize!important;
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-family: 'Mulish', sans-serif;
+  overflow: hidden;
+  width: 260px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: none;
+}
+.menu .sub-menu .sub-menu-level-2 li a:hover{
+  color: #0055A3;
+}
+.menu .sub-menu .sub-menu-level-2 li a::first-letter{
+  text-transform: uppercase;
+}
+.menu > ul > li:hover > .sub-menu li
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > div > div > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 270px;
+  background: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.menu > ul > li > ul > div > div > li:nth-child(3n+0){
+  margin-left: 65px;
+}
+.menu > ul > li > ul > li a {
+  display: block;
+}
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  margin: 0;
+  font-size: 0.8em;
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;
+}
+.menu > ul > li > ul.normal-sub {
+  display: none;
+  width: 100%;
+  padding: 40px 0 30px;
+  position: absolute;
+  z-index: 99;
+  top: 115px;
+  left: 0;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: white;
+  background-image: url(../images/bubble-sub-menu.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  box-shadow: 0 50px 50px #ddd;
+}
+.normal-sub div > li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.normal-sub div > li a {
+  border: 0;
+  text-transform: unset !important;
+  font-family: 'Mulish', sans-serif;
+}
+.normal-sub div > li a:hover{
+  border-bottom: 2px solid #0055A3 !important;
+}
+.overlay{
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+  margin-top: 30px;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /** ipad pro **/
+  .logo {
+    width: 100%;
+    max-width: 56px;
+    margin-left: 20px;
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sub-menu .up-down-arrow{
+    display: none;
+
+    
+  }
+
+  .about-dropmenu {
+    display: inline !important;
+  }
+
+  .sum-z {
+    display: inline-block;
+  }
+  .footer-second .logo-bottom-ft {
+    transform: translate(100%,140%) !important;
+  }
+  .social ul {
+    text-align: center;
+  }
+
+  .social li {
+    display: inline-block;
+    margin-right: 45px;
+  }
+    
+  .footer-second {
+    margin-top: -50px !important;
+  }
+
+}
+@media only screen and (max-width: 1199px) {
+  .menu-container {
+    width: 100%;
+  }
+  .accordion > .sub-menu-level-2 {
+  display: none;
+}
+.up-down-arrow{
+  background: url(../images/plus.svg) no-repeat top center;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 15px;
+}
+.active-accordion > .up-down-arrow{
+  background: url(../images/minus.svg) no-repeat center center !important;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 15px;
+}
+
+.active-accordion.up-down-arrow{
+    background: url(../images/minus.svg) no-repeat center center !important;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 15px;
+}
+
+.accordion:target > .sub-menu-level-2 {
+  display: block;
+}
+  .menu-mobile {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    padding: 0;
+  }
+  .icon-group{
+    margin-top: -23px;
+    margin-right: 65px;
+    padding-top: 0 !important;
+  }
+  .menu > ul{
+    margin-left: 0;
+  }
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+  .accordion:before {
+    display: block;
+  }
+  .menu > ul {
+    display: none;
+  }
+  .menu > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+    padding: 15px;
+  }
+  .menu > ul > li a {
+    width: 100%;
+    font-size: 14px;
+    display: block;
+  }
+  .menu > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+    position: relative;
+    top: unset;
+    box-shadow: unset;
+    padding: 30px 0 0;
+  }
+  .normal-sub div > li{
+    display: table;
+    margin-right: unset;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .normal-sub div > li:last-child{
+    margin-bottom: 0;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin: 0;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    top: 80px;
+    max-height: 548px;
+    overflow-y: scroll;
+    padding:10px 0 40px;
+  }
+  .menu > ul > li:hover a{
+    color: #0055A3;
+    border-bottom: 0;
+    height: auto;
+  }
+  .menu > ul > li > .sub-menu{
+    position: relative;
+    top: 20px;
+    left: auto;
+    background-image: none;
+    padding: 0;
+  }
+  .menu .sub-menu li{
+    margin-bottom: 30px;
+  }
+  .menu > ul > li > ul > div > div > li{
+    width: 100%;
+    max-width: unset;
+    display: table;
+    padding-left: 20px;
+  }
+  .sub-banner{
+    display: none;
+  }
+  .sub-menu .list-sub-cats{
+    width: 100%;
+  }
+  .accordion a{
+    margin-bottom: 0 !important;
+  }
+  .menu > ul > li:hover a, .menu > ul > li a.active{
+
+    border-bottom: none;
+    height: auto;
+  }
+  .menu > ul > li:hover > ul li a{
+    border-bottom: 0;
+    padding: 0;
+
+    border-bottom: none;
+    height: auto;
+  }
+  .menu .sub-menu .sub-menu-level-2 li{
+    padding-top: 20px;
+  }
+  .menu > ul > li > ul > div > div > li:nth-child(3n+0){
+  margin-left: 0;
+  }
+  .menu > ul > li > .sub-menu{
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <filter id="Ellipse_168" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#15489b" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="info" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_168)">
+      <circle id="Ellipse_168-2" data-name="Ellipse 168" cx="25" cy="25" r="25" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Union_300" data-name="Union 300" d="M2353.537.589l-2.345-3.457A10.309,10.309,0,0,1,2344-12.694,10.3,10.3,0,0,1,2354.313-23a10.3,10.3,0,0,1,10.312,10.307,10.31,10.31,0,0,1-7.191,9.825L2355.088.589a.935.935,0,0,1-.775.411A.937.937,0,0,1,2353.537.589Zm-7.662-13.282a8.437,8.437,0,0,0,6.157,8.121.933.933,0,0,1,.524.376l1.757,2.589L2356.07-4.2a.936.936,0,0,1,.523-.376,8.437,8.437,0,0,0,6.158-8.121,8.444,8.444,0,0,0-8.437-8.431A8.443,8.443,0,0,0,2345.875-12.694Zm7.415,3.932v-5.046c0-.372.425-.625,1.021-.625.57,0,1.036.253,1.036.625v5.046c0,.318-.466.636-1.036.636C2353.715-8.125,2353.29-8.444,2353.29-8.762Zm-.066-7.841a1.028,1.028,0,0,1,1.09-.942,1.021,1.021,0,0,1,1.072.942,1.03,1.03,0,0,1-1.072.951A1.037,1.037,0,0,1,2353.225-16.6Z" transform="translate(-2329 36)" fill="#3580ff"/>
+  </g>
+</svg>

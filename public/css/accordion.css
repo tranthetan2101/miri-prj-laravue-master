@@ -1,0 +1,97 @@
+.accordionjs {
+  position: relative;
+  margin: 0;
+  padding: 0px 5px;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.accordionjs .acc_section {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,69,.1);
+}
+.accordionjs .acc_section:last-child{
+  border-bottom: 0;
+}
+.accordionjs .acc_section .acc_head {
+  position: relative;
+  background: #fff;
+  padding: 20px 0;
+  display: block;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 100%;
+  display: table;
+}
+.accordionjs .acc_section .acc_head img{
+  margin-right: 10px;
+  float: left;
+  display: none;
+}
+.accordionjs .acc_section .acc_head a{
+  color: #000;
+}
+.accordionjs .acc_section .acc_head span{
+  width: 85%;
+  line-height: 1.5;
+  float: left;
+}
+
+.accordionjs .acc_section .acc_head:after{
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  background: url(../images/plus.svg) no-repeat top right;
+  width: 8px;
+  height: 8px;
+}
+.accordionjs .acc_section .acc_head h3 {
+  line-height: 1;
+  margin: 5px 0;
+}
+.accordionjs .acc_section .acc_content {
+  padding: 0 10px;
+}
+.accordionjs .acc_section:first-of-type,
+.accordionjs .acc_section:first-of-type .acc_head {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.accordionjs .acc_section:last-of-type,
+.accordionjs .acc_section:last-of-type .acc_content {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.accordionjs .acc_section.acc_active > .acc_content {
+  display: block;
+}
+.accordionjs .acc_section.acc_active > .acc_head:after{
+  top: 27px;
+  right: 0;
+  background: url(../images/minus.svg) no-repeat top right;
+  width: 8px;
+  height: 2px;
+}
+
+li > div > ul > li{
+  padding: 10px 0;
+  margin-left: 15px;
+}
+li > div > ul > li:last-child{
+  padding-bottom: 30px;
+}
+
+li > div > ul > li a{
+  font-size: 14px;
+  color: #000;
+  text-transform: capitalize !important;
+}
+li > div > ul > li a:hover{
+  color: #15489B;
+  text-decoration: underline;
+}
+  

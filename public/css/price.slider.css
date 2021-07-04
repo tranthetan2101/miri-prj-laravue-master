@@ -1,0 +1,162 @@
+.range-slider {
+  *zoom: 1;
+  margin: 20px 0;
+  padding-top: 30px;
+  position: relative;
+  text-align: center;
+}
+.range-slider:before, .range-slider:after {
+  content: " ";
+  display: table;
+}
+.range-slider:after {
+  clear: both;
+}
+.range-slider .track {
+  bottom: 15px;
+  height: 3px;
+  left: 0;
+  margin-bottom: -3px;
+  position: absolute;
+  width: 0;
+  z-index: 50;
+}
+.range-slider .track--full {
+  background: #DEDEDE;
+  width: 99%;
+}
+.range-slider .track--included {
+  background: #8B8B8B;
+  width: 98%;
+}
+.range-slider .slider-thumb {
+  background: #8B8B8B;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  display: block\9;
+  height: 14px;
+  left: 0;
+  position: absolute;
+  width: 14px;
+  z-index: 101;
+}
+.range-slider [type=range] {
+  -webkit-appearance: none;
+  background: none;
+  height: 15px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  pointer-events: none;
+  position: relative;
+  width: 100%;
+  z-index: 75;
+}
+.range-slider [type=range]:focus {
+  outline: none;
+}
+.range-slider [type=range]::-moz-focus-outer {
+  border: 0;
+}
+.range-slider [type=range]:first-of-type {
+  float: left;
+  margin-bottom: -30px;
+}
+.range-slider [type=range]:last-of-type {
+  float: right;
+  margin-bottom: 0;
+}
+.range-slider [type=range]::-webkit-slider-runnable-track {
+  background: none;
+  border: 0;
+  height: 3px;
+  z-index: -1;
+}
+.range-slider [type=range]::-ms-fill-lower {
+  background: none;
+  border: 0;
+}
+.range-slider [type=range]::-ms-fill-upper {
+  background: none;
+  border: 0;
+}
+.range-slider [type=range]::-ms-track {
+  background: transparent;
+  border: 0;
+  border-color: transparent;
+  color: transparent;
+  height: 3px;
+  z-index: -1;
+}
+.range-slider [type=range]:focus::-ms-fill-lower {
+  background: none;
+  border: 0;
+}
+.range-slider [type=range]:focus::-ms-fill-upper {
+  background: none;
+  border: 0;
+}
+.range-slider [type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: none;
+  border: 0;
+  height: 3px;
+  z-index: -1;
+}
+.range-slider [type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #8B8B8B;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 14px;
+  margin-top: -11px;
+  outline: 0;
+  pointer-events: all;
+  position: relative;
+  width: 14px;
+  z-index: 100;
+}
+.range-slider [type=range]::-ms-thumb {
+  background: #8B8B8B;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 14px;
+  margin-top: 0;
+  pointer-events: all;
+  position: relative;
+  width: 14px;
+  z-index: 100;
+}
+.range-slider [type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  background: #8B8B8B;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 14px;
+  margin-top: 0;
+  pointer-events: all;
+  position: relative;
+  width: 14px;
+  z-index: 100;
+}
+.range-slider .output,
+.range-slider output {
+  color: #000000;
+  display: inline-block;
+  font-size: 14px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  transform: translate(-50%, 0);
+}
+.range-slider output::after{
+  content: "VND";
+}
+.range-slider output::nth-letter(1){
+  display: none;
+}
